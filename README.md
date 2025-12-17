@@ -95,25 +95,29 @@ JOIN order_items oi ON o.order_id = oi.order_id
 GROUP BY c.customer_name
 ORDER BY lifetime_value DESC;
 ```
-🛠 Query Optimization Example (Query Simplification)
+🔧 Query Optimization Example (Explicit JOINs)
 
 Before (less optimal)
 ```sql
-SELECT SUM(quantity * unit_price)
-FROM order_items;
+SELECT 
+    SUM(quantity * unit_price) AS total_revenue
+FROM order_items, orders
+WHERE order_items.order_id = orders.order_id;
 ```
 After (optimized)
 ```sql
-SELECT SUM(oi.quantity * oi.unit_price)
-FROM order_items oi;
+SELECT 
+    SUM(oi.quantity * oi.unit_price) AS total_revenue
+FROM orders o
+JOIN order_items oi ON o.order_id = oi.order_id;
 ```
 > In a production environment, additional optimizations could be applied, such as creating indexes on foreign key columns (e.g., `order_items.order_id`) to further improve query performance and reduce execution time.
 
 Improvement:
 
-- Uses explicit JOIN → better clarity
-- Allows the query planner to optimize execution
-- Reduces the risk of incorrect results by enforcing explicit join conditions
+- Uses explicit JOIN syntax for better readability
+- Makes join conditions clear and easier to maintain
+- Helps prevent incorrect results caused by poorly defined joins
 
 ### 🧠 Insights & Business Impact
 
