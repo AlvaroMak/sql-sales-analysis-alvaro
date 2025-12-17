@@ -1,5 +1,5 @@
 # Sales & Revenue SQL Analysis
-## SQL Project by Álvaro Martínez
+### SQL Project by Álvaro Martínez
 
 > All queries are written using Microsoft SQL Server (T-SQL) syntax.
 
@@ -14,7 +14,9 @@ It includes:
 - Query optimization examples
 - Insights that can support decision-making
 
-### 📊 Dataset
+---
+
+## 📊 Dataset
 
 A synthetic dataset modeled after a typical retail/e-commerce environment, including:
 
@@ -25,7 +27,9 @@ A synthetic dataset modeled after a typical retail/e-commerce environment, inclu
 
 This dataset simulates real business scenarios such as recurring customers, product performance, seasonal variation, and order breakdowns.
 
-### 🧱 Database Schema
+---
+
+## 🧱 Database Schema
 
 ```text
 customers(customer_id, customer_name, region)
@@ -34,14 +38,17 @@ orders(order_id, customer_id, order_date)
 order_items(order_item_id, order_id, product_id, quantity, unit_price)
 ```
 
-### ▶️ How to Reproduce the Analysis
+---
+
+## ▶️ How to Reproduce the Analysis
 
 1. Create the database schema using the `schema.sql` script.
 2. Load the CSV files located in the `/data` folder into the corresponding tables.
 3. Execute the queries in `analysis_queries.sql` to reproduce the analysis.
 
+---
 
-### 🔍 SQL Queries & Analysis
+## 🔍 SQL Queries & Analysis
 
 1. Total Revenue
 
@@ -119,7 +126,9 @@ Improvement:
 - Makes join conditions clear and easier to maintain
 - Helps prevent incorrect results caused by poorly defined joins
 
-### 🧠 Insights & Business Impact
+---
+
+## 🧠 Insights & Business Impact
 
 From this analysis, we can identify:
 
@@ -129,7 +138,9 @@ From this analysis, we can identify:
 - Low-performing categories
 - Opportunities for promotions or inventory optimization
 
-### 📂 Repository Structure
+---
+
+## 📂 Repository Structure
 ```text
 /data
   customers.csv
@@ -144,8 +155,12 @@ From this analysis, we can identify:
 
 README.md
 ```
-### 👤 About Me
+
+---
+
+## 👤 About Me
 
 I am an Application Support Specialist and SQL Analyst with 13+ years of experience in enterprise environments, currently transitioning into data-focused roles with a strong emphasis on SQL, reporting, and analytics. 
+
 You can connect with me on LinkedIn:  
 https://linkedin.com/in/alvaro-martinez-k
