@@ -113,7 +113,7 @@ Improvement:
 
 - Uses explicit JOIN → better clarity
 - Allows the query planner to optimize execution
-- Reduces risk of accidental cartesian products
+- Reduces the risk of incorrect results by enforcing explicit join conditions
 
 ### 🧠 Insights & Business Impact
 
