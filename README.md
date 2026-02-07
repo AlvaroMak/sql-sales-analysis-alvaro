@@ -16,7 +16,7 @@ It includes:
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 A synthetic dataset modeled after a typical retail/e-commerce environment, including:
 
@@ -29,7 +29,7 @@ This dataset simulates real business scenarios such as recurring customers, prod
 
 ---
 
-## 🧱 Database Schema
+## Database Schema
 
 ```text
 customers(customer_id, customer_name, region)
@@ -40,7 +40,7 @@ order_items(order_item_id, order_id, product_id, quantity, unit_price)
 
 ---
 
-## ▶️ How to Reproduce the Analysis
+## How to Reproduce the Analysis
 
 1. Create the database schema using the `schema.sql` script.
 2. Load the CSV files located in the `/data` folder into the corresponding tables.
@@ -48,7 +48,7 @@ order_items(order_item_id, order_id, product_id, quantity, unit_price)
 
 ---
 
-## 🔍 SQL Queries & Analysis
+## SQL Queries & Analysis
 
 1. Total Revenue
 
@@ -128,7 +128,7 @@ Improvement:
 
 ---
 
-## 🧠 Insights & Business Impact
+## Insights & Business Impact
 
 From this analysis, we can identify:
 
@@ -140,7 +140,7 @@ From this analysis, we can identify:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 ```text
 /data
   customers.csv
@@ -158,7 +158,7 @@ README.md
 
 ---
 
-## 👤 About Me
+## About Me
 
 I am an Application Support Specialist and SQL Analyst with 13+ years of experience in enterprise environments, currently transitioning into data-focused roles with a strong emphasis on SQL, reporting, and analytics. 
 
